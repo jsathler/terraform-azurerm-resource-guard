@@ -40,9 +40,3 @@ variable "disabled_protections" {
   })
   default = {}
 }
-
-variable "vault_ids" {
-  description = "A list of vault IDs to be protected by this Resource Guard. This parameter is optional"
-  type        = map(string)
-  default     = null
-}

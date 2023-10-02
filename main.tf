@@ -15,10 +15,3 @@ resource "azurerm_data_protection_resource_guard" "default" {
   location                                = var.location
   vault_critical_operation_exclusion_list = local.critical_operations
 }
-
-resource "azurerm_recovery_services_vault_resource_guard_association" "default" {
-  for_each          = { for key, value in var.vault_ids : key => value }
-  name              = "${var.name}-rguard"
-  vault_id          = each.value
-  resource_guard_id = azurerm_data_protection_resource_guard.default.id
-}
