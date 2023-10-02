@@ -25,7 +25,6 @@ Supported Azure services:
 | Name | Type |
 |------|------|
 | [azurerm_data_protection_resource_guard.default](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/data_protection_resource_guard) | resource |
-| [azurerm_recovery_services_vault_resource_guard_association.default](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/recovery_services_vault_resource_guard_association) | resource |
 
 ## Inputs
 
@@ -36,7 +35,6 @@ Supported Azure services:
 | <a name="input_name"></a> [name](#input\_name) | The name of the Resource Guard. This parameter is required | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of the resource group in which the resources will be created. This parameter is required | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags to be applied to resources. This parameter is optional | `map(string)` | `null` | no |
-| <a name="input_vault_ids"></a> [vault\_ids](#input\_vault\_ids) | A list of vault IDs to be protected by this Resource Guard. This parameter is optional | `map(string)` | `null` | no |
 
 ## Outputs
 
