@@ -52,7 +52,6 @@ module "prd-rguard" {
 
   name                 = "prd"
   disabled_protections = { get_security_pin = true }
-  vault_ids            = { devtest-rsv = module.devtest-rsv.rsv_id, prd-rsv = module.prd-rsv.rsv_id }
 }
 ```
 More examples in ./examples folder
